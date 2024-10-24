@@ -1,0 +1,114 @@
+{"0": {
+    "doc": "Geo-domain Explorer",
+    "title": "Geo-domain Explorer",
+    "content": "Geo-domain Explorer tool helps visualize geo-domains queried by the OpenVPS client at a given location. It also automates the creation of DNS records that are needed to register map servers and make them discoverable by OpenVPS. ",
+    "url": "/pages/tools/geodomain-explorer.html",
+    
+    "relUrl": "/pages/tools/geodomain-explorer.html"
+  },"1": {
+    "doc": "Geo-domain Explorer",
+    "title": "Visualize geo-domains queried",
+    "content": "To show geo-domains that are queried by a client at a location, select the “Draw Marker” option on the left (the button that looks like a black balloon with a white circle). Once selected, click anywhere on the map. The purple squares show the geo-domains (or the corresponding S2 cells) that are queried. Use the “Geolocation Error” slider to change the confidence radius and notice how the geo-domains queried change. Click on the red “Clear marker” button to clear the marker and the S2 cells. ",
+    "url": "/pages/tools/geodomain-explorer.html#visualize-geo-domains-queried",
+    
+    "relUrl": "/pages/tools/geodomain-explorer.html#visualize-geo-domains-queried"
+  },"2": {
+    "doc": "Geo-domain Explorer",
+    "title": "Generate DNS zonefiles",
+    "content": "Follow the steps below to generate DNS zonefiles for a map server. Draw a boundary around the region covered by the map . Select the “Draw Polygon” tool on the left. Draw a polygon that covers the region where the map server provides localization service. A reasonable guess for the boundary is acceptable; it does not have to be exact. The points in the polygon always have to be selected in the clockwise order. Generate Cells . Use the “Maximum number of cells” slider to upper bound the number of cells generated. Higher the number of cells, better is the region-covering approximation. However, this also leads to an equally large number of DNS records in the generated zone file. Click on the red “Generate Cells” button to generate cells. Generate Zone File . Fill in the form with information about the DNS zone. Scroll in the right pane to see the full form. The first section is on SOA (Start of Authority) record. Description of the fields in SOA RDATA borrowed from RFC 1035: . MNAME The &lt;domain-name&gt; of the name server that was the original or primary source of data for this zone. RNAME A &lt;domain-name&gt; which specifies the mailbox of the person responsible for this zone. REFRESH A 32 bit time interval before the zone should be refreshed. RETRY A 32 bit time interval that should elapse before a failed refresh should be retried. EXPIRE A 32 bit time value that specifies the upper limit on the time interval that can elapse before the zone is no longer authoritative. MINIMUM The unsigned 32 bit minimum TTL field that should be exported with any RR from this zone. The “RR Records” section is specific to OpenVPS records. Suffix: The suffix to be added to geo-domains. We believe this should be a TLD of its own. But for now, this can be any domain that the OpenVPS client is configured to disocver. RR type: Choose from the list. MCNAME and MNS are described in the paper (Section 4.2). RR data: The address of the map server. TTL: Time to Live for caching. After filling the form, click on “Generate Zone File” button to generate the zone file. Note that the MCNAME and MNS records are wrapped in TXT so the zone file can work with any existing DNS server. ",
+    "url": "/pages/tools/geodomain-explorer.html#generate-dns-zonefiles",
+    
+    "relUrl": "/pages/tools/geodomain-explorer.html#generate-dns-zonefiles"
+  },"3": {
+    "doc": "Home",
+    "title": "OpenVPS",
+    "content": "OpenVPS is a global-scale federated and widely-distributed mapping and localization service. Here, we provide the documentation and links to some tools built for OpenVPS. ",
+    "url": "/#openvps",
+    
+    "relUrl": "/#openvps"
+  },"4": {
+    "doc": "Home",
+    "title": "Geo-domain Explorer",
+    "content": "Geo-domain Explorer tool visualizes the geo-domains that are queried by an OpenVPS device for a given location and confidence radius. It also automates the creation of DNS records needed to register a map server to make it discoverable by OpenVPS. See Geo-domain explorer section for documentation. ",
+    "url": "/#geo-domain-explorer",
+    
+    "relUrl": "/#geo-domain-explorer"
+  },"5": {
+    "doc": "Home",
+    "title": "Waypoint Tagger",
+    "content": "Waypoint Tagger tool helps map creators visualize their 3D map and tag waypoints on it. The creators can also export their waypoints to be used with the map server. See Waypoint Tagger section for documentation. ",
+    "url": "/#waypoint-tagger",
+    
+    "relUrl": "/#waypoint-tagger"
+  },"6": {
+    "doc": "Home",
+    "title": "Home",
+    "content": " ",
+    "url": "/",
+    
+    "relUrl": "/"
+  },"7": {
+    "doc": "Map Server",
+    "title": "Map server",
+    "content": "The map server or the spatial server is a reference implementation for a map server that works within the OpenVPS framework. We use hloc (which in turn uses SuperPoint and SuperGlue) for map creation and localization. The map server provides the following functionalites: . | Map creation and storage along with tools required to transform maps. | Localization against stored maps. | Tagging maps with waypoints. | . ",
+    "url": "/pages/tools/map-server.html#map-server",
+    
+    "relUrl": "/pages/tools/map-server.html#map-server"
+  },"8": {
+    "doc": "Map Server",
+    "title": "Setting up the map server",
+    "content": "Follow instructions on the Github repository to set up the map server. Once the map server is set up, the landing page at https://localhost:8001/ (replace localhost with your IP address if you have set it up on a remote server) should look like this: . ",
+    "url": "/pages/tools/map-server.html#setting-up-the-map-server",
+    
+    "relUrl": "/pages/tools/map-server.html#setting-up-the-map-server"
+  },"9": {
+    "doc": "Map Server",
+    "title": "Map creation",
+    "content": "[TBD] . ",
+    "url": "/pages/tools/map-server.html#map-creation",
+    
+    "relUrl": "/pages/tools/map-server.html#map-creation"
+  },"10": {
+    "doc": "Map Server",
+    "title": "Map Server",
+    "content": " ",
+    "url": "/pages/tools/map-server.html",
+    
+    "relUrl": "/pages/tools/map-server.html"
+  },"11": {
+    "doc": "People",
+    "title": "People",
+    "content": "Sagar Bharadwaj . PhD Student . Anthony Rowe . Professor . Srinivasan Seshan . Professor . Luke Wang . Undergrad . Harrison Williams . Undergrad . Michael Liang . Undergrad . Jackson Ma . Undergrad . ",
+    "url": "/pages/people.html",
+    
+    "relUrl": "/pages/people.html"
+  },"12": {
+    "doc": "People",
+    "title": "People",
+    "content": "| ",
+    "url": "/pages/people.html",
+    
+    "relUrl": "/pages/people.html"
+  },"13": {
+    "doc": "Tools",
+    "title": "OpenVPS tools",
+    "content": "The following tools assist map creators in deploying their maps to OpenVPS. ",
+    "url": "/pages/tools/tools.html#openvps-tools",
+    
+    "relUrl": "/pages/tools/tools.html#openvps-tools"
+  },"14": {
+    "doc": "Tools",
+    "title": "Tools",
+    "content": " ",
+    "url": "/pages/tools/tools.html",
+    
+    "relUrl": "/pages/tools/tools.html"
+  },"15": {
+    "doc": "Waypoint Tagger",
+    "title": "Waypoint Tagger",
+    "content": "Waypoint Tagger tool helps map creators visualize their map in 3D and tag waypoints. The tool requires no installation and is entirely web-based. Load map . The tool takes in the map as a pcd file. Our implementation of the image-based map server (which will be open-sourced after publication) automatically generates the pcd file from 3D scans. For now, we provide an example map that can be visualized. Download points.pcd from figshare (If you are logged in to your figshare account, please log out. Otherwise you might see “Insufficient Permission” error). Click on the green “Load Map” button on the left and select the pcd file. The point cloud of the map shoud load into the tool. Use Left mouse button to rotate. Right mouse button to pan. Scroll to zoom. Add Waypoint . Click on the red “Add Waypoint” button on the left. In the panel on the right, enter the “ID” of the waypoint (eg. “door5”). Add as many waypoints as necessary. We recommend that waypoints correspond to fixed locations in the real-world such as doors, elevators and stairs. When a waypoint is selected, you can use the axis handles to move it along an axis and the plane handles to move it along a plane. You generally want to move it along the x-z plane. Connect neighbors . Select a waypoint to update its neighbors. In the “neighbors” field, enter the IDs of the neighboring waypoints, separated by a comma. Two waypoints are neighbors if there is a direct path between them in the real-world without turns and obstacles. A white line should connect the neighbors. Download waypoints . Once the waypoints are created and neighbors connected, the resulting graph can be exported as a CSV file. Click on the red “Download Waypoints” button. The exported CSV file can be uploaded to the map server, which will expose it to the OpenVPS client on query. The green “Load Waypoints” button can be used to import a waypoints CSV. ",
+    "url": "/pages/tools/waypoint-tagger.html",
+    
+    "relUrl": "/pages/tools/waypoint-tagger.html"
+  }
+}

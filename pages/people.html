@@ -1,0 +1,30 @@
+---
+layout: default
+title: People
+nav_order: 5
+---
+
+<link rel="stylesheet" href="/assets/css/people.css">
+
+<h1>People</h1>
+
+<div class="people-container">
+  {% assign sorted_people = site.people | sort: 'sort_order' %}
+  {% for person in sorted_people %}
+    {% if person.website %}
+    <a href="{{ person.website }}" class="person-link" target="_blank">
+    {% endif %}
+      <div class="person-tile">
+        <div class="person-image">
+          <img src="{{ person.image }}" alt="{{ person.name }}">
+        </div>
+        <div class="person-info">
+          <h3>{{ person.name }}</h3>
+          <p>{{ person.qualification }}</p>
+        </div>
+      </div>
+    {% if person.website %}
+    </a>
+    {% endif %}
+  {% endfor %}
+</div>

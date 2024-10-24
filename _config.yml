@@ -1,0 +1,21 @@
+theme: just-the-docs
+
+title: OpenVPS
+
+# Set a path/url to a favicon that will be displayed by the browser
+favicon_ico: "/assets/images/favicon.ico"
+
+# Set the destination directory
+destination: ./docs
+
+# Define collections
+collections:
+  - people
+
+# Confifure callouts
+callouts:
+  important:
+    title: Important
+    color: blue
+  highlight:
+    color: yellow
