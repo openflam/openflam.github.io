@@ -1,6 +1,6 @@
 ---
 name: Michael Liang
 qualification: Undergrad
-image: /assets/images/people/default.png
+image: /assets/images/people/michael.png
 sort_order: 5
 ---
