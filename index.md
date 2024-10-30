@@ -7,6 +7,12 @@ nav_order: 1
 
 *OpenVPS* is a global-scale federated and widely-distributed mapping and localization service. Here, we provide the documentation and links to some tools built for *OpenVPS*.
 
+## VPS Map server
+
+This is a reference implementation of a map server that provides the Visual Positioning Service (VPS) using neural-network based feature extractor and matcher. We also provide an augmented reality application that displays the tagged waypoints against the real-world using the VPS.
+
+<video src="/assets/videos/spatial_server.mp4" autoplay loop muted width="500"></video>
+
 ## Geo-domain Explorer
 
 <a href="https://openvps.github.io/geo-domain-explorer/" target="_blank">Geo-domain Explorer tool</a> visualizes the geo-domains that are queried by an OpenVPS device for a given location and confidence radius. It also automates the creation of DNS records needed to register a map server to make it discoverable by OpenVPS. See [Geo-domain explorer]({% link pages/tools/geodomain-explorer.md %}) section for documentation.
