@@ -7675,4 +7675,69 @@ blockquote.highlight-title > p:last-child {
   margin-bottom: 0;
 }
 
+p.hint, blockquote.hint {
+  background: rgba(2, 110, 87, 0.2);
+  border-left: 4px solid #41d693;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
+  padding: 0.8rem;
+}
+p.hint::before, blockquote.hint::before {
+  color: #41d693;
+  content: "Hint";
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  padding-bottom: 0.125rem;
+}
+p.hint > .hint-title, blockquote.hint > .hint-title {
+  color: #41d693;
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  padding-bottom: 0.125rem;
+}
+
+p.hint-title, blockquote.hint-title {
+  background: rgba(2, 110, 87, 0.2);
+  border-left: 4px solid #41d693;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
+  padding: 0.8rem;
+}
+p.hint-title > p:first-child, blockquote.hint-title > p:first-child {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #41d693;
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  padding-bottom: 0.125rem;
+}
+
+blockquote.hint {
+  margin-left: 0;
+  margin-right: 0;
+}
+blockquote.hint > p:first-child {
+  margin-top: 0;
+}
+blockquote.hint > p:last-child {
+  margin-bottom: 0;
+}
+
+blockquote.hint-title {
+  margin-left: 0;
+  margin-right: 0;
+}
+blockquote.hint-title > p:nth-child(2) {
+  margin-top: 0;
+}
+blockquote.hint-title > p:last-child {
+  margin-bottom: 0;
+}
+
 /*# sourceMappingURL=just-the-docs-dark.css.map */

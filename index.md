@@ -9,7 +9,7 @@ nav_order: 1
 
 ## VPS Map server
 
-This is a reference implementation of a map server that provides the Visual Positioning Service (VPS) using neural-network based feature extractor and matcher. We also provide an augmented reality application that displays the tagged waypoints against the real-world using the VPS.
+[VPS map server]({% link pages/tools/map-server.md %}) is a reference implementation that provides the Visual Positioning Service (VPS) using neural-network based feature extractor and matcher. The server provide both map creation and localization endpoints. We also provide an augmented reality application that displays the tagged waypoints against the real-world using the VPS. See [Map Server]({% link pages/tools/map-server.md %}) section for documentation on how to create and localize against maps.
 
 <video src="/assets/videos/spatial_server.mp4" autoplay loop muted width="500"></video>
 

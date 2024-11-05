@@ -19,3 +19,6 @@ callouts:
     color: blue
   highlight:
     color: yellow
+  hint:
+    title: Hint
+    color: green
