@@ -5,6 +5,6 @@ nav_order: 3
 has_children: true
 ---
 
-# OpenVPS tools
+# Mercator tools
 
-The following tools assist map creators in deploying their maps to OpenVPS.
+The following tools assist map creators in deploying their maps to Mercator.

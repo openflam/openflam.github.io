@@ -1,4 +1,4 @@
-# OpenVPS Docs
+# Mercator Docs
 
 ## Installation
 This website is built using Jekyll and the just-the-docs theme. Make sure you have bundle and jekyll installed.
