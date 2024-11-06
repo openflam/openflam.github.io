@@ -8,7 +8,7 @@ nav_order: 1
 # Map server
 {: .no_toc }
 
-The [map server](https://github.com/openvps/spatial-server) or the spatial server is a reference implementation for a map server that works within the Mercator framework. We use [hloc](https://github.com/cvg/Hierarchical-Localization) (which in turn uses [SuperPoint](https://arxiv.org/abs/1712.07629) and [SuperGlue](https://arxiv.org/abs/1911.11763)) for map creation and localization. The map server provides the following functionalites:
+The [map server](https://github.com/openvps/spatial-server) or the spatial server is a reference implementation for a map server that works within the OpenFLAME framework. We use [hloc](https://github.com/cvg/Hierarchical-Localization) (which in turn uses [SuperPoint](https://arxiv.org/abs/1712.07629) and [SuperGlue](https://arxiv.org/abs/1911.11763)) for map creation and localization. The map server provides the following functionalites:
 
 - Map creation and storage along with tools required to transform maps.
 - Localization against stored maps.
@@ -30,7 +30,7 @@ Follow instructions on the [Github repository](https://github.com/openvps/spatia
 Maps can be created using the Polycam application (on iPhones/iPads with a LiDAR (2020+)), or using a 2-D video on android phones.
 
 {: .hint}
-Polycam is the easiest way to create maps on Mercator. Creating a map using a video requires an extra step of estimating real-world scale. Map creation using a video may also fail sometimes because of insuficient overlap between video frames.
+Polycam is the easiest way to create maps on OpenFLAMrd. Creating a map using a video requires an extra step of estimating real-world scale. Map creation using a video may also fail sometimes because of insuficient overlap between video framdes.
 
 ### Polycam
 

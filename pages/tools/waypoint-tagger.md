@@ -37,7 +37,7 @@ Select a waypoint to update its neighbors. In the "neighbors" field, enter the I
 
 ### Download waypoints
 
-Once the waypoints are created and neighbors connected, the resulting graph can be exported as a CSV file. Click on the red "Download Waypoints" button. The exported CSV file can be uploaded to the map server, which will expose it to the Mercator client on query.
+Once the waypoints are created and neighbors connected, the resulting graph can be exported as a CSV file. Click on the red "Download Waypoints" button. The exported CSV file can be uploaded to the map server, which will expose it to the OpenFLAME client on query.
 
 The green "Load Waypoints" button can be used to import a waypoints CSV.
 

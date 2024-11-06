@@ -3,9 +3,9 @@ layout: default
 title: Home
 nav_order: 1
 ---
-# Mercator
+# OpenFLAME
 
-*Mercator* is a global-scale federated and widely-distributed mapping and localization service. Here, we provide the documentation and links to some tools built for *Mercator*.
+*OpenFLAME* is a global-scale federated and widely-distributed mapping and localization service. Here, we provide the documentation and links to some tools built for *OpenFLAME*.
 
 ## VPS Map server
 
@@ -15,7 +15,7 @@ nav_order: 1
 
 ## Geo-domain Explorer
 
-<a href="https://openvps.github.io/geo-domain-explorer/" target="_blank">Geo-domain Explorer tool</a> visualizes the geo-domains that are queried by a Mercator device for a given location and confidence radius. It also automates the creation of DNS records needed to register a map server to make it discoverable by Mercator. See [Geo-domain explorer]({% link pages/tools/geodomain-explorer.md %}) section for documentation.
+<a href="https://openvps.github.io/geo-domain-explorer/" target="_blank">Geo-domain Explorer tool</a> visualizes the geo-domains that are queried by a OpenFLAME device for a given location and confidence radius. It also automates the creation of DNS records needed to register a map server to make it discoverable by OpenFLAME. See [Geo-domain explorer]({% link pages/tools/geodomain-explorer.md %}) section for documentation.
 
 ![Geo Domain Creator Tool Demo](/assets/gifs/geo-domain-explorer/query.gif){: width="500" }
 

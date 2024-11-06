@@ -7,7 +7,7 @@ nav_order: 2
 
 # Geo-domain Explorer
 
-<a href="https://anon-vps.github.io/geo-domain-explorer/" target="_blank">Geo-domain Explorer tool</a> helps visualize geo-domains queried by the Mercator client at a given location. It also automates the creation of DNS records that are needed to register map servers and make them discoverable by Mercator.
+<a href="https://anon-vps.github.io/geo-domain-explorer/" target="_blank">Geo-domain Explorer tool</a> helps visualize geo-domains queried by the OpenFLAME client at a given location. It also automates the creation of DNS records that are needed to register map servers and make them discoverable by OpenFLAME.
 
 ## Visualize geo-domains queried
 
@@ -65,9 +65,9 @@ MINIMUM         The unsigned 32 bit minimum TTL field that should be
                 exported with any RR from this zone.
 ```
 
-The "RR Records" section is specific to Mercator records. 
+The "RR Records" section is specific to OpenFLAME records. 
 
-***Suffix***: The suffix to be added to geo-domains. We believe this should be a TLD of its own. But for now, this can be any domain that the Mercator client is configured to disocver.
+***Suffix***: The suffix to be added to geo-domains. We believe this should be a TLD of its own. But for now, this can be any domain that the OpenFLAME client is configured to disocver.
 
 ***RR type***: Choose from the list. MCNAME and MNS are described in the paper (Section 4.2).
 
