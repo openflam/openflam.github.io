@@ -22,102 +22,95 @@
   },"3": {
     "doc": "Home",
     "title": "OpenFLAME",
-    "content": "OpenFLAME is a global-scale federated and widely-distributed mapping and localization service. Here, we provide the documentation and links to some tools built for OpenFLAME. ",
+    "content": "OpenFLAME is a global-scale federated and widely-distributed mapping and localization service. FLAME stands for Federated Localization and Mapping Engine. Here, we provide the documentation and links to some tools built for OpenFLAME. | Design | Tools . | VPS Map server | Geo-domain Explorer | Waypoint Tagger | . | . ",
     "url": "/#openflame",
     
     "relUrl": "/#openflame"
   },"4": {
     "doc": "Home",
-    "title": "VPS Map server",
-    "content": "VPS map server is a reference implementation that provides the Visual Positioning Service (VPS) using neural-network based feature extractor and matcher. The server provide both map creation and localization endpoints. We also provide an augmented reality application that displays the tagged waypoints against the real-world using the VPS. See Map Server section for documentation on how to create and localize against maps. ",
-    "url": "/#vps-map-server",
+    "title": "Design",
+    "content": ". The above figure shows the architecture of OpenFLAME and the steps involved in an OpenFLAME query. OpenFLAME is implemented as an open source npm package. The package code is available on Github. See the paper for full details on OpenFLAME, its architecture, use cases and philosophy. ",
+    "url": "/#design",
     
-    "relUrl": "/#vps-map-server"
+    "relUrl": "/#design"
   },"5": {
     "doc": "Home",
-    "title": "Geo-domain Explorer",
-    "content": "Geo-domain Explorer tool visualizes the geo-domains that are queried by a OpenFLAME device for a given location and confidence radius. It also automates the creation of DNS records needed to register a map server to make it discoverable by OpenFLAME. See Geo-domain explorer section for documentation. ",
-    "url": "/#geo-domain-explorer",
+    "title": "Tools",
+    "content": "VPS Map server . VPS map server is a reference implementation that provides the Visual Positioning Service (VPS) using neural-network based feature extractor and matcher. The server provide both map creation and localization endpoints. We also provide an augmented reality application that displays the tagged waypoints against the real-world using the VPS. See Map Server section for documentation on how to create and localize against maps. Geo-domain Explorer . Geo-domain Explorer tool visualizes the geo-domains that are queried by a OpenFLAME device for a given location and confidence radius. It also automates the creation of DNS records needed to register a map server to make it discoverable by OpenFLAME. See Geo-domain explorer section for documentation. Waypoint Tagger . Waypoint Tagger tool helps map creators visualize their 3D map and tag waypoints on it. The creators can also export their waypoints to be used with the map server. See Waypoint Tagger section for documentation. ",
+    "url": "/#tools",
     
-    "relUrl": "/#geo-domain-explorer"
+    "relUrl": "/#tools"
   },"6": {
-    "doc": "Home",
-    "title": "Waypoint Tagger",
-    "content": "Waypoint Tagger tool helps map creators visualize their 3D map and tag waypoints on it. The creators can also export their waypoints to be used with the map server. See Waypoint Tagger section for documentation. ",
-    "url": "/#waypoint-tagger",
-    
-    "relUrl": "/#waypoint-tagger"
-  },"7": {
     "doc": "Home",
     "title": "Home",
     "content": " ",
     "url": "/",
     
     "relUrl": "/"
-  },"8": {
+  },"7": {
     "doc": "Map Server",
     "title": "Map server",
     "content": "The map server or the spatial server is a reference implementation for a map server that works within the OpenFLAME framework. We use hloc (which in turn uses SuperPoint and SuperGlue) for map creation and localization. The map server provides the following functionalites: . | Map creation and storage along with tools required to transform maps. | Localization against stored maps. | Tagging maps with waypoints and exploring tagged points in augmented reality. | . | Setting up the map server | Map creation . | Polycam . | Scanning | Create Map | Map creation logs | . | Video . | Capture the video | Create a map | Scale the map | . | . | Waypoints . | Upload waypoints | Explore waypoints | . | . ",
     "url": "/pages/tools/map-server.html#map-server",
     
     "relUrl": "/pages/tools/map-server.html#map-server"
-  },"9": {
+  },"8": {
     "doc": "Map Server",
     "title": "Setting up the map server",
     "content": "Follow instructions on the Github repository to set up the map server. Once the map server is set up, the landing page at https://localhost:8001/ (replace localhost with your IP address if you have set it up on a remote server) should look like this: . ",
     "url": "/pages/tools/map-server.html#setting-up-the-map-server",
     
     "relUrl": "/pages/tools/map-server.html#setting-up-the-map-server"
-  },"10": {
+  },"9": {
     "doc": "Map Server",
     "title": "Map creation",
     "content": "Maps can be created using the Polycam application (on iPhones/iPads with a LiDAR (2020+)), or using a 2-D video on android phones. Polycam is the easiest way to create maps on OpenFLAMrd. Creating a map using a video requires an extra step of estimating real-world scale. Map creation using a video may also fail sometimes because of insuficient overlap between video framdes. Polycam . Scanning . | We use the same workflow for Polyam as is used in dataset creation in NeRF Studio. Download the application from the app store. Go to the settings and enable developer mode. | Capture data in LiDAR or Room mode. | Tap Process to process the data in the Polycam app. | Navigate to the export app pane. | Select raw data to export a .zip file. | . Create Map . | Go to the server landing page and select the “Create Map” option. | In the “Map data type” dropdown, select “Polycam”. | Enter any Name of your choice. | Upload the zip created by the Polycam application in the previous step. | Click on “Submit” button. The map creation process will start in the background. | . Map creation logs . To check the progress of the map creation process, click on the “View Logs” button in the landing page. Select the map name whose creation process was started in the previous step. The map creation logs are displayed live. At the end of the map creation process, the log “Map creation completed” is printed. Map creation using Polycam generally takes around 2-3 minutes based on the specific GPU used. Video . Capture the video . Capture a video of the space. Move the camera slowly so that there is sufficient overlap between consecutive video frames. We recommend locking the camera exposure and focus so it is the same across all video frames. We find that a resolution of 1920 X 1080 and a frame rate of 30 FPS is suffucient to get good scans. Create a map . | Go to the server landing page and select the “Create Map” option. | In the “Map data type” dropdown, select “Video”. | Enter any Name of your choice. | Upload the captured video. | Mention the percentage of frames to extract from the video for map creation. The default of 25% works well for most videos. | Click on “Submit” button. The map creation process will start in the background. | . You can view the live logs of the map creation process by going to the “View Logs” page from the landing page. Scale the map . A map created from a video capture does not have real-world scale. To scale the world to real-world metrics, we provide an AR application to capture images and their corresponding pose. Currently, the pose and image collection application only works on Android mobile devices such as phones and tablets with a camera. | From the landing page, select the “Save Image Pose” option under “Map Transforms” section. | Select the name of the map that was created in the previous step and click on “Collect Data”. | Once the a-frame application loads, click on the “AR” option at the bottom right of the screen. | Walk to different parts of your space and click on the capture button at the bottom right of the screen. The application sends the AR pose and the captured image to the server. You can see the data collected in the data/map_data/your_map_name/images_with_pose directory. | Go back to the server landing page and select the “Scale Map” option under “Map Transforms”. The server uses the collected images and pose to automatically scale the map. | . ",
     "url": "/pages/tools/map-server.html#map-creation",
     
     "relUrl": "/pages/tools/map-server.html#map-creation"
-  },"11": {
+  },"10": {
     "doc": "Map Server",
     "title": "Waypoints",
     "content": "Upload waypoints . Download the map using the “Download Map” button on the landing page. A zip file containing the map point cloud is downloaded. Extract the zip file. Upload the point cloud to the Waypoint Tagger tool. This helps you visualize the generated point cloud. Tag waypoints using instructions from the tool page. The tagged waypoints can be downloaded as a CSV from the tagger tool. If the point cloud looks upside down (the ceiling is at the bottom and the floor is at the top), go to the “Rotate Map” option in the landing page to rotate the map by 180 degrees along the X-axis. Click on the “Upload Waypoints” button on the map server landing page. Select the map name and upload the waypoints CSV file. Explore waypoints . We provide an augmented reality application to explore the tagged waypoints graph overlaid against the real-world. The AR application only works on Android device such as phones and tablets with a camera. Click on the “Explore Waypoints” button on the server landing page. Once the web application opens, click on he AR button at the bottom right corner of the page. The application should localize against the map created in the previous steps and should show the waypoints overlaid against the real-wold. ",
     "url": "/pages/tools/map-server.html#waypoints",
     
     "relUrl": "/pages/tools/map-server.html#waypoints"
-  },"12": {
+  },"11": {
     "doc": "Map Server",
     "title": "Map Server",
     "content": " ",
     "url": "/pages/tools/map-server.html",
     
     "relUrl": "/pages/tools/map-server.html"
-  },"13": {
+  },"12": {
     "doc": "People",
     "title": "People",
     "content": "Sagar Bharadwaj . PhD Student . Anthony Rowe . Professor . Srinivasan Seshan . Professor . Luke Wang . Undergrad . Harrison Williams . Undergrad . Michael Liang . Undergrad . Ziyong Ma . Undergrad . ",
     "url": "/pages/people.html",
     
     "relUrl": "/pages/people.html"
-  },"14": {
+  },"13": {
     "doc": "People",
     "title": "People",
     "content": "| ",
     "url": "/pages/people.html",
     
     "relUrl": "/pages/people.html"
-  },"15": {
+  },"14": {
     "doc": "Tools",
     "title": "OpenFLAME tools",
     "content": "The following tools assist map creators in deploying their maps to OpenFLAME. ",
     "url": "/pages/tools/tools.html#openflame-tools",
     
     "relUrl": "/pages/tools/tools.html#openflame-tools"
-  },"16": {
+  },"15": {
     "doc": "Tools",
     "title": "Tools",
     "content": " ",
     "url": "/pages/tools/tools.html",
     
     "relUrl": "/pages/tools/tools.html"
-  },"17": {
+  },"16": {
     "doc": "Waypoint Tagger",
     "title": "Waypoint Tagger",
     "content": "Waypoint Tagger tool helps map creators visualize their map in 3D and tag waypoints. The tool requires no installation and is entirely web-based. Load map . The tool takes in the map as a pcd file. Our implementation of the image-based map server (which will be open-sourced after publication) automatically generates the pcd file from 3D scans. For now, we provide an example map that can be visualized. Download points.pcd from figshare (If you are logged in to your figshare account, please log out. Otherwise you might see “Insufficient Permission” error). Click on the green “Load Map” button on the left and select the pcd file. The point cloud of the map shoud load into the tool. Use Left mouse button to rotate. Right mouse button to pan. Scroll to zoom. Add Waypoint . Click on the red “Add Waypoint” button on the left. In the panel on the right, enter the “ID” of the waypoint (eg. “door5”). Add as many waypoints as necessary. We recommend that waypoints correspond to fixed locations in the real-world such as doors, elevators and stairs. When a waypoint is selected, you can use the axis handles to move it along an axis and the plane handles to move it along a plane. You generally want to move it along the x-z plane. Connect neighbors . Select a waypoint to update its neighbors. In the “neighbors” field, enter the IDs of the neighboring waypoints, separated by a comma. Two waypoints are neighbors if there is a direct path between them in the real-world without turns and obstacles. A white line should connect the neighbors. Download waypoints . Once the waypoints are created and neighbors connected, the resulting graph can be exported as a CSV file. Click on the red “Download Waypoints” button. The exported CSV file can be uploaded to the map server, which will expose it to the OpenFLAME client on query. The green “Load Waypoints” button can be used to import a waypoints CSV. ",
