@@ -7,7 +7,7 @@ nav_order: 2
 
 # Geo-domain Explorer
 
-<a href="https://anon-vps.github.io/geo-domain-explorer/" target="_blank">Geo-domain Explorer tool</a> helps visualize geo-domains queried by the OpenFLAME client at a given location. It also automates the creation of DNS records that are needed to register map servers and make them discoverable by OpenFLAME.
+<a href="https://openflam.github.io/geo-domain-explorer/" target="_blank">Geo-domain Explorer tool</a> helps visualize geo-domains queried by the OpenFLAME client at a given location. It also automates the creation of DNS records that are needed to register map servers and make them discoverable by OpenFLAME.
 
 ## Visualize geo-domains queried
 

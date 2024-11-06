@@ -7,7 +7,7 @@ nav_order: 3
 
 # Waypoint Tagger
 
-<a href="https://anon-vps.github.io/waypoint-tagger/" target="_blank">Waypoint Tagger tool</a> helps map creators visualize their map in 3D and tag waypoints. The tool requires no installation and is entirely web-based.
+<a href="https://openflam.github.io/waypoint-tagger/" target="_blank">Waypoint Tagger tool</a> helps map creators visualize their map in 3D and tag waypoints. The tool requires no installation and is entirely web-based.
 
 ### Load map
 
