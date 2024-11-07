@@ -11,6 +11,18 @@ nav_order: 1
 1. TOC
 {:toc}
 
+## Repositories
+
+All the repositories related to OpenFLAME is in the [openflam Github organization](https://github.com/openflam). Some important repositories are:
+
+- [dns-spatial-discovery](https://github.com/openflam/dns-spatial-discovery): The npm and Python library implementing the main OpenFLAME architecture. It includes DNS-based discovery of map servers, device localization with the map servers, and tracking localization confidence scores against local device sensors (VIO).
+  
+- [spatial-server](https://github.com/openflam/spatial-server): A reference implementation of the map server that works with OpenFLAME. The map server implements a visual positioning system (VPS) using 2-D images. We use neural-network based feature extractor and matcher. See [documentation]({% link pages/tools/map-server.md %}) on how to use the map server.
+  
+- [geo-domain-explorer](https://github.com/openflam/geo-domain-explorer): Code for the [geo-domain-explorer tool](https://openflam.github.io/geo-domain-explorer/). See [documentation]({% link pages/tools/geodomain-explorer.md %}) for how to use the tool.
+  
+- [waypoint-tagger](https://github.com/openflam/waypoint-tagger): Code for the [waypoint-tagger tool](https://openflam.github.io/waypoint-tagger/). See [documentation]({% link pages/tools/waypoint-tagger.md %}) for how to use the tool.
+
 ## Design
 
 ![Architecture](/assets/images/architecture.png){: width="500" }
