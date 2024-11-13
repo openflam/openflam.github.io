@@ -22,3 +22,6 @@ callouts:
   hint:
     title: Hint
     color: green
+  warning:
+    title: Warning
+    color: red

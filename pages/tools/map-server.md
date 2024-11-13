@@ -40,10 +40,13 @@ Polycam is the easiest way to create maps on OpenFLAMrd. Creating a map using a 
    
    ![Polycam Settings](/assets/images/map-server/polycam-settings.png){: width="200"}
 
-2. Capture data in LiDAR or Room mode.
+2. Capture data in LiDAR or Room mode. Capture only in **landscape** mode. If you capture in portrait mode, the final map you get will be rotated by 90 degrees.
 3. Tap Process to process the data in the Polycam app.
 4. Navigate to the export app pane.
 5. Select raw data to export a .zip file.
+
+{: .warning}
+Scan the map in Polycam in only in landscape mode. A portrait mode capture results in a rotated map.
 
 #### Create Map
 
