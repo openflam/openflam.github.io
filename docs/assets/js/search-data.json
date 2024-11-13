@@ -22,7 +22,7 @@
   },"3": {
     "doc": "Home",
     "title": "OpenFLAME",
-    "content": "OpenFLAME is a global-scale federated and widely-distributed mapping and localization service. FLAME stands for Federated Localization and Mapping Engine. Here, we provide the documentation and links to some tools built for OpenFLAME. | Repositories | Design | Tools . | VPS Map server | Geo-domain Explorer | Waypoint Tagger | . | . ",
+    "content": "OpenFLAME is a global-scale federated and widely-distributed mapping and localization service. FLAME stands for Federated Localization and Mapping Engine. Here, we provide the documentation and links to some tools built for OpenFLAME. For more details about the motivation behind the project, its architecture and workings, see the paper. | Repositories | Design | Tools . | VPS Map server | Geo-domain Explorer | Waypoint Tagger | . | . ",
     "url": "/#openflame",
     
     "relUrl": "/#openflame"

@@ -6,7 +6,7 @@ nav_order: 1
 # OpenFLAME
 {: .no_toc }
 
-*OpenFLAME* is a global-scale federated and widely-distributed mapping and localization service. FLAME stands for Federated Localization and Mapping Engine. Here, we provide the documentation and links to some tools built for *OpenFLAME*.
+[*OpenFLAME*](https://arxiv.org/abs/2411.04271) is a global-scale federated and widely-distributed mapping and localization service. FLAME stands for Federated Localization and Mapping Engine. Here, we provide the documentation and links to some tools built for *OpenFLAME*. For more details about the motivation behind the project, its architecture and workings, [see the paper](https://arxiv.org/abs/2411.04271).
 
 1. TOC
 {:toc}
@@ -29,7 +29,7 @@ All the repositories related to OpenFLAME is in the [openflam Github organizatio
 
 The above figure shows the architecture of OpenFLAME and the steps involved in an OpenFLAME query. OpenFLAME is implemented as an [open source npm package](https://github.com/orgs/openflam/packages/npm/package/dnsspatialdiscovery). The package code is [available on Github](https://github.com/openflam/dns-spatial-discovery/tree/master/js). 
 
-See the paper for full details on OpenFLAME, its architecture, use cases and philosophy.
+See the [paper](https://arxiv.org/abs/2411.04271) for full details on OpenFLAME, its architecture, use cases and philosophy.
 
 ## Tools
 
