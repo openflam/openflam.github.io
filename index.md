@@ -9,7 +9,7 @@ nav_order: 1
 [*OpenFLAME*](https://arxiv.org/abs/2411.04271) is a global-scale federated and widely-distributed mapping and localization service. FLAME stands for Federated Localization and Mapping Engine. Here, we provide the documentation and links to some tools built for *OpenFLAME*. For more details about the motivation behind the project, its architecture and workings, [see the paper](https://arxiv.org/abs/2411.04271).
 
 <p align="center">
-    <img src="/assets/images/logo_horizontal.png" width="500" />
+    <img src="/assets/images/logo_horizontal.png" width="300" />
 </p>
 
 1. TOC
@@ -53,4 +53,4 @@ See the [paper](https://arxiv.org/abs/2411.04271) for full details on OpenFLAME,
 
 <a href="https://openflam.github.io/waypoint-tagger/" target="_blank">Waypoint Tagger tool</a> helps map creators visualize their 3D map and tag waypoints on it. The creators can also export their waypoints to be used with the map server. See [Waypoint Tagger]({% link pages/tools/waypoint-tagger.md %}) section for documentation.
 
-![Second Tool Configure Demo](/assets/gifs/waypoint-tagger/load-map.gif){: width="500" }
+![Second Tool Configure Demo](/assets/gifs/waypoint-tagger/intro.gif){: width="500" }
