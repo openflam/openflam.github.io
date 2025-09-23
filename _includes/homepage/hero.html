@@ -1,0 +1,38 @@
+<div class="container col-xxl-8 px-4 py-5">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <div id="twentytwenty-container" class="twentytwenty-container">
+        <img src="/assets/images/homepage/outdoors.jpg" class="rounded" />
+        <img src="/assets/images/homepage/indoors.jpg" class="rounded" />
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div style="width: 300px">
+        <img
+          src="/assets/images/logo_horizontal.png"
+          class="img-fluid"
+          alt="OpenFLAME Logo"
+        />
+      </div>
+      <p class="lead">
+        OpenFLAME (Open Federated Localization and Mapping Engine) is a
+        federated platform for hosting, organizing, and discovering digital
+        maps. The vision of OpenFLAME is to enable world-scale mapping to
+        support the next generation of spatial applications.
+      </p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+          Docs
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(function () {
+    $("#twentytwenty-container").twentytwenty({
+      no_overlay: true, //Do not show the overlay with before and after
+    });
+  });
+</script>
