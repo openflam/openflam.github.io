@@ -8,7 +8,7 @@ favicon_ico: "/assets/images/favicon.ico"
 logo: "/assets/images/logo_horizontal.png"
 
 # Set the destination directory
-destination: ./docs
+# destination: ./docs
 
 # Define collections
 collections:
@@ -27,3 +27,7 @@ callouts:
   warning:
     title: Warning
     color: red
+
+sass:
+  quiet_deps: true # https://github.com/just-the-docs/just-the-docs/issues/1541
+  silence_deprecations: ["import"] # https://github.com/just-the-docs/just-the-docs/issues/1607
