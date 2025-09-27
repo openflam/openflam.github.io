@@ -1,10 +1,7 @@
-# frozen_string_literal: true
-
 source "https://rubygems.org"
 
-gem "base64"
-gem "csv"
-gem "jekyll"
-gem "jekyll-sass-converter", '~> 3.1.0'
-gem "just-the-docs"
-gem "logger"
+# Use the GitHub Pages-locked toolchain
+gem "github-pages", group: :jekyll_plugins
+
+# Needed to load `remote_theme:` from _config.yml
+gem "jekyll-remote-theme"
