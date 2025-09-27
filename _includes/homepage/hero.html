@@ -1,0 +1,108 @@
+<div id="home" class="container col-xxl-8 px-4 py-5">
+  <div
+    class="row flex-lg-row-reverse align-items-center justify-content-center g-5 py-5"
+  >
+    <!-- Column with map reference -->
+    <div class="col-10 col-sm-8 col-lg-6 align-items-center">
+      <!-- Image with indoor + outdoor comparison -->
+      <div
+        id="twentytwenty-container"
+        class="mx-auto mx-lg-0"
+        style="touch-action: none"
+      >
+        <picture>
+          <source
+            srcset="/assets/images/homepage/outdoors_tall.jpg"
+            media="(max-width: 767px)"
+          />
+          <img
+            src="/assets/images/homepage/outdoors.jpg"
+            class="img-fluid rounded"
+          />
+        </picture>
+        <picture>
+          <source
+            srcset="/assets/images/homepage/indoors_tall.jpg"
+            media="(max-width: 767px)"
+          />
+          <img
+            src="/assets/images/homepage/indoors.jpg"
+            class="img-fluid rounded"
+          />
+        </picture>
+      </div>
+
+      <!-- Button to maps application -->
+      <div class="mt-3 text-center">
+        <a
+          href="https://map.open-flame.com"
+          class="btn btn-md btn-danger"
+          role="button"
+          target="_blank"
+        >
+          <i class="bi bi-map-fill me-2"></i>
+          Explore Maps
+        </a>
+      </div>
+    </div>
+
+    <!-- Column with text content -->
+    <div class="col-lg-6">
+      <div style="width: 300px">
+        <img
+          src="/assets/images/logo_horizontal.png"
+          class="img-fluid"
+          alt="OpenFLAME Logo"
+        />
+      </div>
+      <p class="lead">
+        OpenFLAME (Open Federated Localization and Mapping Engine) is a
+        federated platform for hosting, organizing, and discovering digital
+        maps. The vision of OpenFLAME is to enable world-scale mapping to
+        support the next generation of spatial applications.
+      </p>
+
+      <!-- Buttons -->
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a
+          href="/docs.html"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-primary btn-lg"
+        >
+          <i class="bi bi-file-earmark-text-fill"></i>
+          Docs
+        </a>
+        <a
+          href="https://github.com/openflam"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-dark btn-lg"
+        >
+          <i class="bi bi-github"></i>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Initialize TwentyTwenty plugin once images load -->
+<script>
+  function initTwentyTwenty() {
+    $("#twentytwenty-container").twentytwenty({ no_overlay: true });
+  }
+
+  const $imgs = $("#twentytwenty-container img");
+  let loaded = 0;
+
+  $imgs.each(function () {
+    if (this.complete) {
+      if (++loaded === $imgs.length) initTwentyTwenty();
+    } else {
+      $(this).one("load", function () {
+        if (++loaded === $imgs.length) initTwentyTwenty();
+      });
+    }
+  });
+</script>
