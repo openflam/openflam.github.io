@@ -6,7 +6,7 @@ nav_order: 1
 # OpenFLAME
 {: .no_toc }
 
-[*OpenFLAME*](https://arxiv.org/abs/2411.04271) is a global-scale federated and widely-distributed mapping and localization service. FLAME stands for Federated Localization and Mapping Engine. Here, we provide the documentation and links to some tools built for *OpenFLAME*. For more details about the motivation behind the project, its architecture and workings, [see the paper](https://arxiv.org/abs/2411.04271).
+[*OpenFLAME*](https://arxiv.org/abs/2411.04271) is a platform for hosting, organizing, and discovering digital maps. It makes detailed maps, including indoor spaces, accessible while safeguarding the privacy of map data. Each organization hosts and manages its own maps, retaining full control over their data, much like websites operate independently on the Web. The broader vision of OpenFLAME is to enable world-scale mapping as a foundation for the next generation of spatial applications. For a deeper discussion of the project’s motivation, architecture, and design, [see the paper](https://arxiv.org/abs/2411.04271).
 
 <p align="center">
     <img src="/assets/images/logo_horizontal.png" width="300" />
