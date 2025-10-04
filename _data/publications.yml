@@ -1,3 +1,8 @@
+- title: "OpenFLAME: A Federated Spatial Naming Infrastructure"
+  authors: "Sagar Bharadwaj, Ziyong Ma, Ivan Liang, Michael Farb, Anthony Rowe, Srinivasan Seshan"
+  paper_url: "https://arxiv.org/abs/2411.04271"
+  venue: "arXiv"
+
 - title: "Uniting the World by Dividing it: Federated Maps to Enable Spatial Applications"
   authors: "Sagar Bharadwaj, Anthony Rowe, Srinivasan Seshan"
   paper_url: "https://dl.acm.org/doi/10.1145/3713082.3730371"
@@ -9,8 +14,3 @@
   paper_url: "https://sagar-bharadwaj-ks.github.io/files/papers/openflame-ismar.pdf"
   video_url: "https://youtu.be/A6bH2I5ersY"
   venue: "ISMAR, 2025"
-
-- title: "OpenFLAME: Building a large scale federated localization and mapping service"
-  authors: "Sagar Bharadwaj, Luke Wang, Michael Liang, Harrison Williams, Ivan Liang, Srinivasan Seshan, Anthony Rowe"
-  paper_url: "https://arxiv.org/abs/2411.04271"
-  venue: "arXiv"
