@@ -1,3 +1,9 @@
+- title: "Flame3D: Zero-shot Compositional Reasoning of 3D Scenes with Agentic Language Models"
+  authors: "Sagar Bharadwaj, Ziyong Ma, Anurag Ghosh, Srinivasan Seshan, Anthony Rowe"
+  paper_url: "https://arxiv.org/pdf/2605.09218"
+  website_url: "https://www.open-flame.com/flame3d/"
+  venue: "arXiv preprint, 2026"
+
 - title: "OpenFLAME: A Federated Spatial Naming Infrastructure"
   authors: "Sagar Bharadwaj, Ziyong Ma, Ivan Liang, Michael Farb, Anthony Rowe, Srinivasan Seshan"
   paper_url: "https://nines-conference.org/papers/p020-Bharadwaj.pdf"
